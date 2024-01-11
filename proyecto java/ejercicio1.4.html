@@ -1,0 +1,20 @@
+<script>
+    //2. Realizar un algoritmo que presente los 10 primeros números Fibonacci y cuente cuantos pares e impares hay
+    let n=0, i=0, p=0, c=1, imp=0, pp=0, pi=1;
+    n=prompt ("Ingrese un numero")
+    while (i < n) {
+        i++;
+        if (c % 2==0) {
+            p++;
+            pp=c+pp
+        }
+        else{
+            imp++;
+            pi=c*pi;
+        } 
+        c++;
+       
+    }
+        {document.write ("Esta es la suma de los  ",i , " Pares = ",pp)
+        document.write ("<br> Esta es el producto de los  ",i , " Impares = ",pi) }
+</script>

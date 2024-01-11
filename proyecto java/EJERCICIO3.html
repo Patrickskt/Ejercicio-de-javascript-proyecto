@@ -1,0 +1,28 @@
+<script>
+    //3. Realizar un algoritmo que imprima los N primeros primos además la suma y promedio de ellos.
+    let d=0, sp=0, p=0, pri=1, i=0; pr=0;
+    n=prompt ("ingrese el valor de N: ")
+    document.write(" Los ",n, " primeros primos <br>")
+    while (pr < n){
+        i=2;
+        pri++
+        while (pri % i != 0){
+            i++;
+        }
+        {
+            if (pri == i){  
+                document.write( pri, " - ")
+                d++;
+                pr++;
+                sp= pri + sp;
+            } 
+        }
+        p=sp/pr;
+    }
+    
+       
+
+        {document.write( "<br> suma de los primos ",sp )
+        document.write("<br> promedio ",p ) }
+
+    </script>

@@ -1,0 +1,16 @@
+<script>
+    //Realizar un algoritmo que permita saber si un número ingresado por teclado n es perfecto imprimir mensaje cualitativo.
+    let cont = 1, num = 0, sum = 0;
+    num = parseInt(prompt("INGRESE UN NUMERO"));
+    while (cont < num) {
+        if (num % cont == 0) {
+            sum = sum + cont;
+        }
+        cont++;
+    }
+    if (num == sum) {
+        document.write("SI ES PERFECTO");
+    } else {
+        document.write("NO ES PERFECTO");
+    }
+</script>

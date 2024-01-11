@@ -1,0 +1,26 @@
+<script>
+    //14. Desarrolle un algoritmo que permita convertir calificaciones numéricas, según la siguiente tabla: 
+//1. A = 19 y 20 SOBRESALIENTE
+//2. B = 16, 17 y 18 MUY BUENO
+3//. C = 13, 14 y 15 BUENO
+//4. D = 10, 11 y 12 REGULAR
+//5. E = 1 hasta el 9. DEFICIENTE
+//Se asume que la nota está comprendida entre 1 y 20.
+    let n=0;
+    n=prompt("Ingrese la calificacion del estudiante");
+    if (n<10){
+        document.write(" DEFICIENTE ");
+    }
+    else if (n<13){
+        document.write(" REGULAR ");
+    }
+    else if (n<16){
+        document.write(" BUENO ");
+    }
+    else if (n<19){
+        document.write(" MUY BUENO ")
+    }
+    else {
+        document.write(" SOBRESALIENTE ")
+    }
+</script>

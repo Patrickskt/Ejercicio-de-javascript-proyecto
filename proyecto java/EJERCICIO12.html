@@ -1,0 +1,15 @@
+<script>
+    //12. Desarrolle un Algoritmo que lee dos números enteros A y B, imprimir el producto (A * B) y potencia (𝐴
+    //𝐵) utilizando suma y multiplicación sucesiva.
+
+    let c=0, ms=1, ss=0;
+    a=parseFloat(prompt(" Ingrese el primer numero "));
+    b=parseFloat(prompt(" Ingrese el segundo numero "));
+    while ( c < b){
+        c++;
+        ss = a + ss;
+        ms = ms * a;
+    }
+    document.write(" Producto de la suma suseciva: ",ss)
+    document.write(" <BR> Producto de la multiplicacion suseciva: ",ms)
+</script>

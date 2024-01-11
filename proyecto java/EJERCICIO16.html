@@ -1,0 +1,21 @@
+<script>
+    //Realizar un algoritmo imprima los 3 primeros números perfectos.
+    let pr = 0;
+    let pri = 1;
+    let num_perf = 0;
+    document.write("Los 3 primeros números perfectos son: ")
+    while (pr < 3) {
+        let i = 2;
+        pri++;
+
+        while (pri % i !== 0) {
+            i++;
+        }
+        
+        if (pri === i) {
+            pr++;
+            num_perf = ((2 ** (pri - 1)) * ((2 ** pri) - 1));
+            document.write("<br>", num_perf);
+        }
+    }
+</script>

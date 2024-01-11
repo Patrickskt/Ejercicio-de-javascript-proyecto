@@ -1,0 +1,39 @@
+<script>
+    //13. Desarrolle un algoritmo que lea cuatro números diferentes y a continuación imprima el mayor 
+    //de los cuatro números introducidos y también el menor de ellos. 
+    let a=0, b=0, c=0, d=0;
+    a=prompt("Ingrese el primer numero")
+    b=prompt("Ingrese el segundo numero")
+    c=prompt("Ingrese el tercer numero")
+    d=prompt("Ingrese el cuarto numero")
+    if ( a > b ){
+        if ( a > c){
+            if (a > d){
+                document.write("EL MAYOR ES: ",a);
+            }
+            else {
+                document.write ("EL MAYOR ES: ",d);
+            }
+        }
+        else if (c > d){
+            document.write("EL MAYOR ES: ",c);
+        }
+        else{
+            document.write("EL MAYOR ES : ",d);
+        }
+    }
+    else if (b > c){
+        if (b > d){
+            document.write("EL MAYOR ES: ",b);
+        }
+        else{
+            document.write("EL MAYOR ES: ",d);
+        }
+    }
+    else if (c > d){
+        document.write("EL MAYOR ES: ",c);
+    }
+    else{
+        document.write("EL MAYOR ES: ",d);
+    }
+</script>

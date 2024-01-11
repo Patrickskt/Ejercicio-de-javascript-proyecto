@@ -1,0 +1,15 @@
+<script>
+    //Hacer un diagrama de flujo para calcular 𝐴𝐵 , siendo B un entero, nótese que B puede ser 0 o negativo. No se pueden emplear logaritmos.
+
+    let ex=0, b=0, c=0, p=1;
+    ex=prompt ("ingrese la base: ");
+    b=prompt  ("ingrese el exponente: ");
+    if (ex == 0){
+        document.write(1);
+    }
+    while ( c < b ){
+        c++;
+        p = p * ex;
+    }
+    document.write(p);
+</script>
